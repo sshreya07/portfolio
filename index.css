@@ -791,8 +791,8 @@ mobile version
 @media (max-width: 576px) {
     
     #proPic {
-        width: 450px;
-        height: 450px;
+        width: 400px;
+        height: 400px;
     }
 
     .col-7{
@@ -801,7 +801,7 @@ mobile version
     }
 
     .col{
-        top:30rem;
+        top:33rem;
         text-align: center;
     }
 
@@ -928,22 +928,22 @@ mobile version
 
     .developmentProjects #robot{
         top: -33rem;
-        left: 6rem;
+        left: auto;
     }
 
     .developmentProjects #owl{
-        left: 6rem;
+        left: auto;
         /* bottom: 10rem; */
         top: -37rem;
     }
 
     .developmentProjects #exam{
         top: -37.5rem;
-        left: 3.9rem;
+        left: auto;
     }
 
     .developmentProjects #car{
-        left: 6rem;
+        left: auto;
         top: -36rem;
     }
 
@@ -993,7 +993,7 @@ mobile version
     }
 
     .contactText{
-        padding: 4rem 1rem;
+        padding:4rem 0;
         font-size: 16px;
     }
 
