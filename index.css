@@ -920,7 +920,7 @@ mobile version
     }
 
     .pro1 .description{
-        left: 4rem;
+        left: auto;
         width: auto;
         text-align: center;
         /* top: 6rem; */
@@ -994,6 +994,11 @@ mobile version
 
     .contactText{
         padding: 4rem 1rem;
+        font-size: 16px;
+    }
+
+    .contactText h3{
+        font-size: 24px;
     }
 
     .handshake{
@@ -1036,11 +1041,6 @@ mobile version
 
 
 
-    .hand{
-        position: absolute;
-        left: 0;
-
-    }
 
 
 
