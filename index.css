@@ -50,8 +50,7 @@ text-transform: capitalize;
     padding: 0.4rem 1.5rem;
     font-size: 16px;
     box-shadow:0px 15px 9px 0px rgba(0,87,180,0.2);
-/* -webkit-box-shadow: 0px 8px 30px 0 rgba(0,87,180,0.4);
--moz-box-shadow: 0px 8px 30px 0 rgba(0,87,180,0.4); */
+    z-index: 2;
 }
 
 .submitBtn:hover{
@@ -303,6 +302,20 @@ top: 4rem;
     color: white;
 }
 
+#collapseExample1{
+    padding: 3rem;
+    position: relative;
+    left: 38rem; 
+    bottom:10rem;
+}
+
+#collapseExample2{
+    padding: 3rem;
+    position: relative;
+     bottom:10rem;
+     right: 38rem;
+}
+
 
 
 
@@ -324,7 +337,6 @@ width: 1340px;
 height: 618px;
 left: -8rem;
 top: 8rem;
-scroll-behavior: smooth;
 background:rgba(189, 89, 114, 0.05) ;
 mix-blend-mode: normal;
 border: 1px solid rgba(189, 89, 114, 0.05);
@@ -554,6 +566,7 @@ border-radius: 100%;
 background: rgba(255, 182, 182, 0.31);
 filter: blur(15px);
 transform: rotate(0.95deg);
+z-index: -2;
 }
 
 .shape3{
@@ -566,6 +579,7 @@ border-radius: 50%;
 background: rgba(17, 206, 206, 0.31);
 filter: blur(15px);
 transform: rotate(15.64deg);
+z-index: -2;
 }
 
 .shape4{
@@ -579,6 +593,7 @@ border-radius: 50%;
 background: rgba(17, 206, 206, 0.13);
 filter: blur(30px);
 transform: rotate(0.95deg);
+z-index: -2;
 }
 
 .shape5{
@@ -591,6 +606,7 @@ border-radius: 50%;
 background: rgba(89, 17, 206, 0.17);
 filter: blur(15px);
 transform: rotate(-11.88deg);
+z-index: -2;
 }
 
 
@@ -621,9 +637,6 @@ box-shadow: 0px 8px 20px rgba(196,196,196,0.69);
     -moz-box-shadow: 0px 10px 39px 0px rgba(167,7,7,0.69); */
     color: white;
     border-radius: 20px;
-    /* position: relative;
-    bottom: 20rem; */
-    /* width:12rem; */
     padding: 1rem 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -648,6 +661,7 @@ box-shadow: 0px 8px 20px rgba(196,196,196,0.69);
 
 
 
+/* elements */
 
 .star{
     animation: star 4s ease-in-out infinite;
@@ -703,6 +717,326 @@ box-shadow: 0px 8px 20px rgba(196,196,196,0.69);
     }
 }
 
+
+/*
+mobile version
+*/
+
+/* navbar toggling*/
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown > .dropdown-toggle:active {
+    pointer-events: none;
+}
+  .navbar-nav {
+    padding-top: 1rem;
+    @media (min-width: 1000px) {
+        padding-top: 0;
+    }
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}
+.navbar-toggler {
+    height: 45px;
+}
+.navbar-toggler span {
+    display: block;
+    background-color: black;
+    height: 2px;
+    width: 25px;
+    margin-top: 6px;
+    margin-bottom: 4px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    position: relative;
+    opacity: 1;
+ }
+ .navbar-toggler span:nth-child(1),
+ .navbar-toggler span:nth-child(3) {
+    -webkit-transition: transform .35s ease-in-out;
+    -moz-transition: transform .35s ease-in-out;
+    -o-transition: transform .35s ease-in-out;
+    transition: transform .35s ease-in-out;
+ }
+ .navbar-toggler:not(.collapsed) span:nth-child(1) {
+     position: absolute;
+     top: 32px;
+     -webkit-transform: rotate(135deg);
+     -moz-transform: rotate(135deg);
+     -o-transform: rotate(135deg);
+     transform: rotate(135deg);
+     opacity: 0.9;
+ }
+ .navbar-toggler:not(.collapsed) span:nth-child(2) {
+     visibility: hidden;
+     background-color: transparent;
+ }
+ .navbar-toggler:not(.collapsed) span:nth-child(3) {
+     position: absolute;
+     top: 32px;
+     -webkit-transform: rotate(-135deg);
+     -moz-transform: rotate(-135deg);
+     -o-transform: rotate(-135deg);
+     transform: rotate(-135deg);
+     opacity: 0.9;
+ } 
+
+
+@media (max-width: 576px) {
+    
+    #proPic {
+        width: 450px;
+        height: 450px;
+    }
+
+    .col-7{
+        position: relative;
+        top:-13rem;
+    }
+
+    .col{
+        top:30rem;
+        text-align: center;
+    }
+
+    .star1{
+        top: 5rem;
+        left: 20rem;
+    }
+
+    .star2{
+        left: 23rem;
+        top: 28rem;
+    }
+
+
+
+
+
+    .service{
+        top: 130px;
+        width: auto;
+        height: 1500px;
+    }
+
+    .circle4{
+        left: 330px;
+    }
+
+    .serviceDescription{
+        width: auto;
+        text-align: center;
+    }
+
+    .col-md-7{
+        margin-bottom: 5rem;
+        text-align: center;
+        width: 400px;
+    }
+
+    .resumeBtn{
+        top: 10rem;
+    }
+
+
+
+
+    .shape5{
+        top: 3237px;
+        z-index: -2;
+    }
+
+    .specializingText{
+        top: 18rem;
+    }
+
+    .development{
+        width: auto;
+        text-align: center;
+        left: auto;
+    }
+
+    .developmentTech{
+        left: auto;
+    }
+
+    .developmentText{
+        padding-top: 1.5rem;
+    }
+
+    .UI{
+        left: 0;
+        width: auto;
+    }
+
+    .UITool{
+        left: auto;
+        margin-top: 8rem ;
+    }
+
+    .star4{
+        left: 1rem;
+        top: 20rem;
+    }
+
+    .star5{
+        left: 20rem;
+        top: 2700px;
+    }
+
+    .star3{
+        left: 3rem;
+        top: 2500px;
+    }
+
+    #collapseExample1{
+        left: auto;
+        top: 5rem;
+    }
+
+    #collapseExample2{
+        right: auto;
+        top: 5rem;
+    }
+
+
+
+    .pro1{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .pro1 .pic{
+        width: auto;
+        text-align: center;
+    }
+
+    .pro1 .description{
+        left: 4rem;
+        width: auto;
+        text-align: center;
+        /* top: 6rem; */
+    }
+
+    .developmentProjects #robot{
+        top: -33rem;
+        left: 6rem;
+    }
+
+    .developmentProjects #owl{
+        left: 6rem;
+        /* bottom: 10rem; */
+        top: -37rem;
+    }
+
+    .developmentProjects #exam{
+        top: -37.5rem;
+        left: 3.9rem;
+    }
+
+    .developmentProjects #car{
+        left: 6rem;
+        top: -36rem;
+    }
+
+    .pro2Div .pic{
+        position: relative;
+        bottom: 20rem !important;
+    }
+
+    .pro2Div .description{
+        position: relative;
+        top: 17rem !important;
+    }
+
+    .pro4Div .pic{
+        position: relative;
+        bottom: 20rem !important;
+    }
+
+    .pro4Div .description{
+        position: relative;
+        top: 17rem !important;
+    }
+
+
+
+
+    .UXprojects{
+        width:auto;
+        flex-wrap: wrap;
+        text-align: center;
+        /* padding: ;: 0 12rem; */
+        border-radius: 0 !important;
+        
+    }
+
+    .UXProject{
+        width: auto;
+        padding: 0 !important;
+        box-sizing: content-box !important;
+    }
+
+
+
+    .contact{
+        width: auto;
+        height: auto;
+    }
+
+    .contactText{
+        padding: 4rem 1rem;
+    }
+
+    .handshake{
+        position: relative;
+        left: -4.5rem;
+        bottom: 5rem;
+    }
+
+    .contactBtn{
+    position: relative;
+    top:17rem; 
+    width: auto;
+    text-align: center !important;
+    }
+
+
+    .followBar{
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .followBar .form-inline{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        position: relative;
+        left: -7rem;
+        top: 3rem;
+
+    }
+
+    .followBar .navbar-Brand{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+
+
+}
 
 
 
