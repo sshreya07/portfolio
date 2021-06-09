@@ -808,6 +808,7 @@ mobile version
     .star1{
         top: 5rem;
         left: 20rem;
+        z-index: -2;
     }
 
     .star2{
@@ -1031,6 +1032,14 @@ mobile version
         display: flex;
         flex-direction: column;
         text-align: center;
+    }
+
+
+
+    .hand{
+        position: absolute;
+        left: 0;
+
     }
 
 
