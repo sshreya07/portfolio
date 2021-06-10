@@ -343,12 +343,27 @@ border: 1px solid rgba(189, 89, 114, 0.05);
 box-sizing: border-box;
 }
 
+.pro1Div #pro1{
+    width: 300px;
+    height: 300px;
+}
+
 .developmentProjects .pro1 .description{
     position: relative;
 width: 300px;
 height: 300px;
 
 background: #F5F5F5;
+}
+
+.developmentProjects .pro1 .description h5{
+    position: relative; 
+    top: 4rem;
+}
+
+.developmentProjects .pro1 .description button{
+    position: relative; 
+    top: 8rem;
 }
 
 .developmentProjects #robot{
@@ -502,6 +517,10 @@ box-shadow: 0px 8px 20px rgba(196,196,196,0.69);
 -moz-box-shadow: 0px 8px 20px rgba(196,196,196,0.69);
 }
 
+.UXProject #UIpro1{
+    padding: 3rem;
+}
+
 #UXBtn{
     position: relative;
     top: 8rem;
@@ -651,7 +670,8 @@ box-shadow: 0px 8px 20px rgba(196,196,196,0.69);
 
 .followBar{
     background: rgba(238, 62, 84, 0.19);
-    height: 210px;
+    height: 280px;
+    width: 100%;
     position: relative;
     top: 15rem;
     padding: 2rem 0;
@@ -789,31 +809,48 @@ mobile version
 
 
 @media (max-width: 576px) {
+
+    body{
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
+
     
     #proPic {
         width: 400px;
         height: 400px;
     }
 
+    .row{
+        display:flex;
+        flex-direction: column;
+        /* margin: 4rem 0; */
+    }
+
     .col-7{
-        position: relative;
-        top:-13rem;
+        margin: 4rem 0;
     }
 
     .col{
-        top:33rem;
-        text-align: center;
+        top:28rem;
+        /* text-align: center; */
+    }
+
+    .col h1{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 38px;
     }
 
     .star1{
-        top: 5rem;
-        left: 20rem;
+        top: 8rem;
+        left:0;
         z-index: -2;
     }
 
     .star2{
-        left: 23rem;
-        top: 28rem;
+        left: 5rem;
+        top: 26rem;
     }
 
 
@@ -821,7 +858,7 @@ mobile version
 
 
     .service{
-        top: 130px;
+        top: 280px;
         width: auto;
         height: 1500px;
     }
@@ -842,7 +879,7 @@ mobile version
     }
 
     .resumeBtn{
-        top: 10rem;
+        top: 13rem;
     }
 
 
@@ -854,7 +891,7 @@ mobile version
     }
 
     .specializingText{
-        top: 18rem;
+        top: 20rem;
     }
 
     .development{
@@ -882,13 +919,13 @@ mobile version
     }
 
     .star4{
-        left: 1rem;
-        top: 20rem;
+        left: 23rem;
+        top: 18rem;
     }
 
     .star5{
         left: 20rem;
-        top: 2700px;
+        top: 2400px;
     }
 
     .star3{
@@ -911,40 +948,42 @@ mobile version
     .pro1{
         display: flex;
         flex-direction: column;
-        height: auto;
     }
 
-    .pro1 .pic{
-        width: auto;
-        text-align: center;
-    }
-
-    .pro1 .description{
+    .developmentProjects .pro1 .description{
         left: auto;
-        width: auto;
+        width: 300px;
+        height: 200px;
         text-align: center;
-        /* top: 6rem; */
+    }
+
+    .developmentProjects .pro1 .description h5{
+        top: 2rem;
+    }
+
+    .developmentProjects .pro1 .description button{
+        top: 4rem;
     }
 
     .developmentProjects #robot{
-        top: -33rem;
+        top: -28rem;
         left: auto;
     }
 
     .developmentProjects #owl{
         left: auto;
         /* bottom: 10rem; */
-        top: -37rem;
+        top: -36rem;
     }
 
     .developmentProjects #exam{
-        top: -37.5rem;
+        top: -31rem;
         left: auto;
     }
 
     .developmentProjects #car{
         left: auto;
-        top: -36rem;
+        top: -35rem;
     }
 
     .pro2Div .pic{
@@ -954,7 +993,7 @@ mobile version
 
     .pro2Div .description{
         position: relative;
-        top: 17rem !important;
+        top: 11rem !important;
     }
 
     .pro4Div .pic{
@@ -964,7 +1003,11 @@ mobile version
 
     .pro4Div .description{
         position: relative;
-        top: 17rem !important;
+        top: 11rem !important;
+    }
+
+    .viewMoreBtn{
+        top: -20rem;
     }
 
 
@@ -977,12 +1020,19 @@ mobile version
         /* padding: ;: 0 12rem; */
         border-radius: 0 !important;
         
+        margin: 0;
+        
     }
 
     .UXProject{
         width: auto;
         padding: 0 !important;
         box-sizing: content-box !important;
+    }
+
+    .UXProject #UIpro1{
+        width: 500px;
+        padding: 0 3rem;
     }
 
 
@@ -1001,24 +1051,28 @@ mobile version
         font-size: 24px;
     }
 
-    .handshake{
+    .handshake #handshakeImg{
         position: relative;
-        left: -4.5rem;
         bottom: 5rem;
+        width: 350px;
     }
 
     .contactBtn{
     position: relative;
-    top:17rem; 
+    top:14rem; 
     width: auto;
     text-align: center !important;
     }
 
 
+
+
+
     .followBar{
-        width: max-content;
+        width:100%;
         display: flex;
         flex-direction: column;
+        height: 360px;
     }
 
     .followBar .form-inline{
@@ -1042,7 +1096,21 @@ mobile version
 
 
 
+.hand #handImg{
+ position: absolute;
+ left: 25rem;
+ top: 48rem;
+ width: 350px;
+}
 
+
+.thumbsup #thumbsupImg{
+    position: absolute;
+    left: 25rem;
+    width: 350px;
+ top: 48rem;
+
+   }
 
 
 }

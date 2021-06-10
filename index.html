@@ -144,7 +144,7 @@
                     </div>
                 </div>
 
-                <div class="hand" data-aos="fade-up"  data-aos-duration="2000"><img src="./images/hand1.png"/></div>
+                <div class="hand" data-aos="fade-up"  data-aos-duration="2000"><img src="./images/hand1.png" id="handImg" /></div>
 
 
                 <div class="text-center resumeBtn" data-aos="fade-up"  data-aos-duration="2000">
@@ -222,7 +222,7 @@
                     </div>
                 </div>
             
-                <div class="thumbsup" data-aos="fade-up"  data-aos-duration="2000"><img src="./images/thumbsup.png"/></div>
+                <div class="thumbsup" data-aos="fade-up"  data-aos-duration="2000"><img src="./images/thumbsup.png" id="thumbsupImg" /></div>
 
                 <div class="recentProject" data-aos="fade-up"  data-aos-duration="1000">
                     <div class="text-center recentProjectText "><h2 style="font-weight: 750;">RECENT PROJECT</h2></div>
@@ -235,15 +235,15 @@
                     
                     <div class="developmentProjects" data-aos="fade-up"  data-aos-duration="1000">
 
-                        <div class="pro1 d-flex justify-content-center" data-aos="fade-up"  data-aos-duration="1000">
+                        <div class="pro1 d-flex justify-content-center pro1Div" data-aos="fade-up"  data-aos-duration="1000">
                             <div class="pic">
                                 <div>
-                                    <img src="./images/pro1.png" id="pro1" width="300px" height="300px" />
+                                    <img src="./images/pro1.png" id="pro1" />
                                 </div>
                             </div>
                             <div class="description text-center">
-                                <div style="position: relative; top: 4rem;"><h5>Voice<br/>Recognition App</h5></div>
-                                <div style="position: relative; top: 8rem;">
+                                <div><h5>Voice<br/>Recognition App</h5></div>
+                                <div>
                                     <button class="btn proBtn pro1Btn">View Project</button>
                                 </div>
                             </div>
@@ -257,8 +257,8 @@
 
                         <div class="pro1 d-flex justify-content-center pro2Div" style="position:relative;bottom: 3rem;"  data-aos="fade-up"  data-aos-duration="1000" >
                             <div class="description text-center">
-                                <div style="position: relative; top: 4rem;"><h5>Beautiful Designed<br/>Landing Page</h5></div>
-                                <div style="position: relative; top: 8rem;">
+                                <div><h5>Beautiful Designed<br/>Landing Page</h5></div>
+                                <div>
                                     <button class="btn proBtn pro2Btn">View Project</button>
                                 </div>
                             </div>
@@ -275,15 +275,15 @@
                         <div class="shape2" data-aos="fade-up"  data-aos-duration="2000"></div>
                         <div class="shape1" data-aos="fade-up"  data-aos-duration="2000"></div>
 
-                        <div class="pro1 d-flex justify-content-center" style="position:relative;bottom: 7rem;"  data-aos="fade-up"  data-aos-duration="1000">
+                        <div class="pro1 d-flex justify-content-center pro3Div" style="position:relative;bottom: 7rem;"  data-aos="fade-up"  data-aos-duration="1000">
                             <div class="pic">
                                 <div>
                                     <img src="./images/pro4.png" id="pro3" width="300px" height="300px" />
                                 </div>
                             </div>
                             <div class="description text-center">
-                                <div style="position: relative; top: 4rem;"><h5>Online<br/>Exam Portal</h5></div>
-                                <div style="position: relative; top: 8rem;">
+                                <div><h5>Online<br/>Exam Portal</h5></div>
+                                <div>
                                     <button class="btn proBtn pro3Btn">View Project</button>
                                 </div>
                             </div>
@@ -294,8 +294,8 @@
 
                         <div class="pro1 d-flex justify-content-center pro4Div" style="position:relative;bottom: 17rem;"  data-aos="fade-up"  data-aos-duration="1000">
                             <div class="description text-center">
-                                <div style="position: relative; top: 4rem;"><h5>CARS</h5></div>
-                                <div style="position: relative; top: 8rem;">
+                                <div><h5>CARS</h5></div>
+                                <div>
                                     <button class="btn proBtn pro4Btn">View Project</button>
                                 </div>
                             </div>
@@ -322,7 +322,7 @@
                         <div class="text-center recentProjectText " style="margin: -17rem 0 13rem 0;"><h4 style="font-weight: 750;" data-aos="fade-up"  data-aos-duration="2000">UI / UX DESIGNING</h4></div>
 
                         <div class="UXProject col-sm-12 mx-auto" data-aos="fade-up"  data-aos-duration="2000">
-                            <img src="./images/UXproject.png" style="padding: 3rem;" />
+                            <img src="./images/UXproject.png" id="UIpro1" />
                         </div>
 
                         <div class="text-center ">
@@ -345,7 +345,7 @@
 
                                 <button class="btn contactBtn" data-aos="fade-up"  data-aos-duration="1000">SayHelloShreya@gmail.com</button>  
                             </div>
-                            <div class="col-md-6 handshake" data-aos="fade-up"  data-aos-duration="1000"><img src="./images/handshake.png"></div>
+                            <div class="col-md-6 handshake" data-aos="fade-up"  data-aos-duration="1000"><img src="./images/handshake.png" id="handshakeImg" /></div>
                         </div>
                     </div>
 
@@ -358,20 +358,44 @@
 
         <div class="container-fuild followBar" data-aos="fade-up"  data-aos-duration="2000">
             <div class="container">
-                <nav class="navbar navbar-light justify-content-between followMeDiv" style="margin-bottom: 2rem;">
+
+                <nav class="navbar navbar-light navbar-expand-lg py-3 px-4" data-aos="fade-up"  data-aos-duration="2000" style="display: flex;justify-content: space-between;">
+                    <div class="navbar-brand">
+                        <h4 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Follow Me On</h4>
+                    </div>
+                    
+                    <div style="display: flex;justify-content: space-between;">
+                          <a href="#" class="nav-link">
+                            <button class="btn my-2 my-sm-0" type="submit" ><img src="./images/github-logo.jpg" width="45px" height="45px" style="border-radius: 50%;" /></button>
+                          </a>
+                          <a href="#" class="nav-link">
+                            <button class="btn my-2 my-sm-0" type="submit"><img src="./images/linkedin-logo.png" width="45px" height="45px" style="border-radius: 50%;"/></button>
+                          </a>
+                          <a href="#" class="nav-link">
+                            <button class="btn my-2 my-sm-0" type="submit"><img src="./images/insta.jpg" width="45px" height="45px" style="border-radius: 50%;"/></button>
+                          </a>
+                    </div>
+                  </nav>
+
+
+                <!-- <nav class="navbar navbar-light justify-content-between followMeDiv" style="margin-bottom: 2rem;">
                     <div class="navbar-brand"><h4 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Follow Me On</h4></div>
                     <form class="form-inline">
                       <button class="btn my-2 my-sm-0" type="submit" ><img src="./images/github-logo.jpg" width="45px" height="45px" style="border-radius: 50%;" /></button>
                       <button class="btn my-2 my-sm-0" type="submit"><img src="./images/linkedin-logo.png" width="45px" height="45px" style="border-radius: 50%;"/></button>
                       <button class="btn my-2 my-sm-0" type="submit"><img src="./images/insta.jpg" width="45px" height="45px" style="border-radius: 50%;"/></button>
                     </form>
-                </nav>
+                </nav> -->
 
-                <nav class="navbar navbar-light justify-content-between followMeDiv" >
-                    <div class="navbar-brand"><h6 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Copyright @ 2021 Shreya All Right Reserved</h6></div>
-                    <div class="navbar-brand"><h6 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Contact@gmail.com</h6></div>
-                    
-                </nav>
+                <nav class="navbar navbar-light navbar-expand-lg py-3 px-4" data-aos="fade-up"  data-aos-duration="2000" style="display: flex;justify-content: space-between;">
+                    <div>
+                      Copyright @ 2021 Shreya All Rights Reserved
+                    </div>
+                    <a href="#" class="nav-link">
+                        <button class="btn active">Contact@gmail.com</button>
+                    </a>
+                    </div>
+                  </nav>
             </div>
         </div>
 
