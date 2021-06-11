@@ -1054,6 +1054,8 @@ mobile version
     .handshake #handshakeImg{
         position: relative;
         bottom: 5rem;
+        left: 0;
+        text-align: center !important;
         width: 350px;
     }
 
