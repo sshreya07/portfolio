@@ -46,6 +46,7 @@ text-transform: capitalize;
     font-style: normal;
     background-color: #0057B4;
     color: white;
+    outline: none;
     border-radius: 20px;
     padding: 0.4rem 1.5rem;
     font-size: 16px;
@@ -1037,12 +1038,13 @@ mobile version
 
     .UXProject{
         width: auto;
+        height: 550px;
         padding: 0 !important;
         box-sizing: content-box !important;
     }
 
     .UXProject #UIpro1{
-        width: 500px;
+        width: 430px;
         padding: 0 3rem;
     }
 
@@ -1066,7 +1068,7 @@ mobile version
         position: relative;
         bottom: 5rem;
         left: 0;
-        text-align: center !important;
+        /* text-align: center !important; */
         width: 350px;
     }
 
