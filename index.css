@@ -501,7 +501,7 @@ background: #F5F5F5;
 .UXProject{
     position: relative;
 width: 932px;
-height: 840px;
+height: 830px;
 
 background: rgba(243, 243, 243, 0.39);
 border: 2px solid rgba(243, 243, 243, 0.35);
@@ -522,10 +522,11 @@ box-shadow: 0px 8px 20px rgba(196,196,196,0.69);
     padding: 3rem;
 }
 
-#ViewUXProjectBtn{
+/* #ViewUXProjectBtn{
     position: relative;
-    bottom: 4rem;
-}
+    bottom: 5rem;
+    top: 0;
+} */
 
 #UXBtn{
     position: relative;
