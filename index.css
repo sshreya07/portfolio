@@ -1047,6 +1047,8 @@ mobile version
         height: 550px;
         padding: 0 !important;
         box-sizing: content-box !important;
+        display: flex;
+        flex-direction: column;
     }
 
     .UXProject #UIpro1{
