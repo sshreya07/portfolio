@@ -499,10 +499,10 @@ background: #F5F5F5;
 }
 
 .UXProject{
-    position: relative;
+position: relative;
 width: 932px;
 height: 830px;
-
+margin: 4rem auto;
 background: rgba(243, 243, 243, 0.39);
 border: 2px solid rgba(243, 243, 243, 0.35);
 box-sizing: border-box;
@@ -528,6 +528,12 @@ box-shadow: 0px 8px 20px rgba(196,196,196,0.69);
     top: 0;
 } */
 
+.UXProject #UIpro2{
+    width: 500px;
+    height: 700px;
+    margin: 0 3rem;
+}
+
 #UXBtn{
     position: relative;
     top: 8rem;
@@ -541,25 +547,25 @@ box-shadow: 0px 8px 20px rgba(196,196,196,0.69);
     color: white;
 }
 
-.circle5{
+/* .circle5{
     position: absolute;
 width: 536px;
 height: 536px;
-left: -20rem;
-top: 3654px;
+left: -24rem;
+top: 4454px;
 
-background: rgba(234, 65, 65, 0.77);
+background: rgba(255, 0, 0, 0.57);
 filter: blur(30px);
 border-radius: 50%;
 z-index: -2;
-}
+} */
 
 .circle6{
-    background: rgba(27, 227, 227, 0.77);
+    background: rgba(27, 227, 227, 0.37);
     position: absolute;
     width: 536px;
     height: 536px;
-    left: 47rem;
+    left: 70rem;
     top: 2918px;
     
     filter: blur(30px);
@@ -571,7 +577,7 @@ z-index: -2;
     position: absolute;
 width: 475.79px;
 height: 475.78px;
-left: -150px;
+left: -400px;
 top: 1095.2px;
 border-radius: 100%;
 
@@ -586,7 +592,7 @@ z-index: -2;
 position: absolute;
 width: 109.49px;
 height: 106.11px;
-left: -29.77px;
+left: -290.77px;
 top: 900px;
 border-radius: 100%;
 background: rgba(255, 182, 182, 0.31);
@@ -599,8 +605,8 @@ z-index: -2;
     position: absolute;
 width: 417.19px;
 height: 417.29px;
-left: 900px;
-top: 278px;
+left: 1100px;
+top: -10rem;
 border-radius: 50%;
 background: rgba(17, 206, 206, 0.31);
 filter: blur(15px);
