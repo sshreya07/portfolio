@@ -1039,7 +1039,6 @@ mobile version
 
     .UXprojects{
         width:auto;
-        flex-wrap: wrap;
         text-align: center;
         /* padding: ;: 0 12rem; */
         border-radius: 0 !important;
@@ -1050,7 +1049,7 @@ mobile version
 
     .UXProject{
         width: auto;
-        height: 550px;
+        height: 750px;
         padding: 0 !important;
         box-sizing: content-box !important;
         display: flex;
@@ -1060,6 +1059,16 @@ mobile version
     .UXProject #UIpro1{
         width: 430px;
         padding: 0 3rem;
+        margin-bottom: 1rem;
+        margin-top: -4rem;
+    }
+
+    .UXProject #UIpro2{
+        width: 430px;
+        height: 470px;
+        padding: 0 3rem;
+        margin-bottom: 2rem;
+        margin-top: -3rem;
     }
 
 
